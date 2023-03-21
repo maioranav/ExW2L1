@@ -3,8 +3,13 @@ package GestAuto;
 public class CorsaException extends Exception {
     String message;
 
-    public CorsaException(String mess) {
-        this.message = mess;
+    public CorsaException() {
+        super("Valori inseriti non validi");
+    }
+
+    public CorsaException(String value) {
+        super(value);
+        this.message = value;
     }
 
     ;
